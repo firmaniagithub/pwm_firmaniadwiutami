@@ -1,71 +1,80 @@
+/* Pengaturan umum */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif; /* Menggunakan font Arial atau font sans-serif jika Arial tidak tersedia */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    padding: 0; /* Menghilangkan padding di sekitar body */
+    background-color: #f4f4f4; /* Warna latar belakang */
+    color: #333; /* Warna teks */
 }
 
+/* Pengaturan header, nav, section, footer */
 header, nav, section, footer {
-    padding: 20px;
-    background-color: #fff;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px; /* Padding 20px di dalam header, nav, section, dan footer */
+    background-color: #fff; /* Warna latar belakang */
+    margin-bottom: 20px; /* Margin bawah 20px */
+    border-radius: 5px; /* Border radius 5px */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Efek bayangan */
 }
 
+/* Pengaturan teks pada header dan footer */
 header h1, footer p {
-    text-align: center;
+    text-align: center; /* Teks rata tengah */
 }
 
+/* Pengaturan navigasi */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+    list-style-type: none; /* Menghilangkan tanda bullet pada daftar */
+    padding: 0; /* Menghilangkan padding di dalam ul */
+    text-align: center; /* Teks rata tengah */
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    display: inline; /* Menampilkan daftar secara sejajar */
+    margin-right: 10px; /* Margin kanan 10px */
 }
 
+/* Pengaturan tautan navigasi */
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 8px 16px;
-    border-radius: 5px;
-    background-color: #f0f0f0;
-    transition: background-color 0.3s;
+    text-decoration: none; /* Menghilangkan dekorasi tautan */
+    color: #333; /* Warna teks */
+    padding: 8px 16px; /* Padding 8px atas dan bawah, 16px kanan dan kiri */
+    border-radius: 5px; /* Border radius 5px */
+    background-color: #f0f0f0; /* Warna latar belakang */
+    transition: background-color 0.3s; /* Transisi perubahan warna latar belakang */
 }
 
 nav ul li a:hover {
-    background-color: #e0e0e0;
+    background-color: #e0e0e0; /* Warna latar belakang saat dihover */
 }
 
+/* Pengaturan konten */
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Konten rata tengah secara horizontal */
+    align-items: flex-start; /* Konten mulai dari atas secara vertikal */
 }
 
+/* Pengaturan gambar profil */
 .profile-picture {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid #333;
-    margin-right: 20px;
+    width: 200px; /* Lebar 200px */
+    height: auto; /* Tinggi otomatis agar proporsional */
+    border-radius: 50%; /* Membuat lingkaran */
+    border: 3px solid #333; /* Border tebal 3px dengan warna hitam */
+    margin-right: 20px; /* Margin kanan 20px */
 }
+
+/* Media Query untuk layar dengan lebar maksimum 600px */
 @media only screen and (max-width: 600px) {
     header, nav, section, footer {
-        padding: 10px;
+        padding: 10px; /* Padding 10px di dalam header, nav, section, dan footer */
     }
 
     nav ul li {
-        margin-right: 5px;
+        margin-right: 5px; /* Margin kanan 5px pada item daftar navigasi */
     }
 
     .profile-picture {
-        width: 100px;
-        height: auto;
+        width: 100px; /* Lebar 100px untuk gambar profil */
+        height: auto; /* Tinggi otomatis agar proporsional */
     }
 }
